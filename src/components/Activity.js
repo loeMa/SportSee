@@ -19,7 +19,7 @@ const Activity = (data) => {
         return value.charAt(value.length-1)
     }
 
-    const CustomTooltip = ({ active, payload, label }) => {
+    const CustomTooltip = ({ active, payload }) => {
         
         if (active ) {
             return (
@@ -51,7 +51,7 @@ const Activity = (data) => {
                 }}
                 >
                 
-                <XAxis tickLine={false}  dataKey="day" fontSize={14} tickSize={26} tickFormatter={formatXAxis} />
+                <XAxis  tickLine={false}  dataKey="day" fontSize={14} tickSize={26} tickFormatter={formatXAxis} />
                 
 
                 <YAxis tickCount={3} dataKey="kilogram" fontSize={14} tickSize={45} orientation='right' tickLine={false} axisLine={false} type="number"  domain={['dataMin - 2', 'dataMax + 5']} />

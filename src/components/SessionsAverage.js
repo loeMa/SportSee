@@ -44,7 +44,7 @@ const SessionsAverage = (data) => {
      * 
      * @param {Boolean} active 
      * @param {Object[]} payload - style and api's data
-     * @returns {String}
+     * @returns {String*}
      */
     const CustomTooltip = ({ active, payload }) => {
 

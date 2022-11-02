@@ -191,21 +191,21 @@ export function MockApi(){
                 .then((res) => {
 
                     const mainData = res.data.USER_MAIN_DATA
-                    const userId = mainData.find((user) => user.id == id)
+                    const userId = mainData.find((user) => user.id === id)
                     setUserData(UserMapper.convertToUser(userId))
 
                     const activityData = res.data.USER_ACTIVITY
-                    const activityId = activityData.find((user) => user.userId == id) 
+                    const activityId = activityData.find((user) => user.userId === id) 
                     
                     setActivities(ActivitiesMapper.convertToActivities(activityId))
 
                     const sessionsData = res.data.USER_AVERAGE_SESSIONS
-                    const sessionsId = sessionsData.find((user) => user.userId == id)
+                    const sessionsId = sessionsData.find((user) => user.userId === id)
                     
                     setSessions(SessionsMapper.convertToSessions(sessionsId))
                     
                     const performanceData = res.data.USER_PERFORMANCE
-                    const performanceId = performanceData.find((user) => user.userId == id)
+                    const performanceId = performanceData.find((user) => user.userId === id)
 
                     setPerformance(PerformanceMapper.convertToPerformance(performanceId))
                 }) 

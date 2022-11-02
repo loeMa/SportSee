@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
-import { CallActivities, CallApi, CallPerformance, CallSessions, MockApi } from '../utils/CallApi'; 
+import { CallActivities, CallApi, CallPerformance, CallSessions, /* MockApi */ } from '../utils/CallApi'; 
 import '../styles/pages/dashboard.css'
 import Card from '../components/Card';
 import energy from '../assets/img/energy.svg';
